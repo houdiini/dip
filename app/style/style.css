@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+.adress-input {
+    display: block;
+    float: left;
+    width: 80% !important;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-adress {
+    display: block;
+    float: left;
+    width: 20% !important;
+    margin: 0;
+    padding: 0;
+}
+
+.user_list {
+    width: 20%;
+    min-width: 120px;
+    height: 100%;
+    position: absolute;
+    top: 33px;
+    float: left;
+    overflow-y: scroll;
+}
+
+.details {
+    margin-left: 20%;
+    width: 40%;
+    min-width: 250px;
+    padding: 10px;
+    float: left;
+}
+
+.details table {
+    width: 100%;
+    height: 100%;
+
+}

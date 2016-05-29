@@ -1,0 +1,9 @@
+<div class="wrapper">
+	<div class="header"><a href="#" class="btn ui-btn">Додати клієнта</a></div>
+	<ul class="list">
+		<li class="list-item" ng-repeat="item in db.users | limitTo:100" id="{{db.users.indexOf(item)}}" ng-click="extraInfo(db.users.indexOf(item))">
+			{{item.fName}} {{item.sName}}
+		</li>
+	</ul>
+
+</div>

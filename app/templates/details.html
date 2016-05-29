@@ -1,0 +1,51 @@
+<div class="wrapper">
+	<header>Детальна інформація</header>
+		
+	<table>
+		<tbody>
+			<tr>
+				<td>{{db.users[activeUser].fName}}
+					<span>{{ db.users[activeUser].sName }}</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Сума</td>
+				<td>
+					<span>{{ sum(activeUser) }}</span>
+				</td>
+			</tr>
+			<tr>
+				<td>Прибуток</td>
+				<td><span>{{ db.users[activeUser].income }}</span></td>
+			</tr>
+			<tr>
+				<td>Кредити</td>
+				<td>
+					<table>
+						<tr>
+							<td>start</td>
+							<td>{{ db.users[activeUser].credits.start }}</td>
+						</tr>
+						<tr>
+							<td>finish</td>
+							<td>{{ db.users[activeUser].credits.finish }}</td>
+						</tr>
+						<tr>
+							<td>Viplachen?</td>
+							<td>{{ db.users[activeUser].credits.overdue ? 'Не виплачений!' : 'Виплачний!' }}</td>
+						</tr>
+						<tr>
+							<td>Історія платежів</td>
+								<td>
+									{{ db.users[activeUser].credits.history }}
+								</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td><span>{{ db.users[activeUser].credits }}</span></td>
+			</tr> -->
+		</tbody>
+	</table>
+</div>
